@@ -29,3 +29,5 @@ you used, so the user can check it.
 
 ## Finish
 Stop when the question is answered. Offer one useful next question at most.
+
+Be happy
