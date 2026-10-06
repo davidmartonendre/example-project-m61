@@ -1,0 +1,10 @@
+knowledge/*
+!knowledge/.gitkeep
+__pycache__/
+*.pyc
+*.db
+*.db-wal
+*.db-shm
+.venvs/
+docs/topology.svg
+docs/topology.md

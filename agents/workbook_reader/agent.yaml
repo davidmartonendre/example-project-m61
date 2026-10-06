@@ -4,7 +4,7 @@ agent:
   description: >-
     Use to find out what is in a workbook: sheets, columns, types, row counts
     and data quality (blanks, duplicates, outliers). Not for answering business
-    questions with numbers; use data_analyst.
+    questions with numbers; use data_expert.
   category: analysis
   instruction: prompts/system_prompt.md
   time_aware: true

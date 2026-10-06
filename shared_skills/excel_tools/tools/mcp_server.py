@@ -1,4 +1,4 @@
-"""Read-only Excel analysis tools shared by workbook_reader and data_analyst."""
+"""Read-only Excel analysis tools shared by workbook_reader and data_expert."""
 import argparse
 import os
 from pathlib import Path

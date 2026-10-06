@@ -6,7 +6,7 @@ root_agent:
   restricted: false
   sub_agents:
     - {name: workbook_reader, mode: tool}   # verbose profiling output stays out of the chat
-    - data_analyst                          # transfer: may ask which column or period is meant
+    - data_expert                           # transfer: may ask which column or period is meant
     - {name: report_writer, mode: tool}
   tools:
     builtin: [ask_user]
@@ -17,14 +17,14 @@ root_agent:
 
     How to route:
     - A new workbook, or "what is in this file": call workbook_reader.
-    - A question that needs numbers: hand over to data_analyst. If the
+    - A question that needs numbers: hand over to data_expert. If the
       workbook has not been described yet in this conversation, call
       workbook_reader first.
     - "Write it up", "make a report", "give me a Word file": call
       report_writer and pass it every figure and finding gathered so far,
       word for word, plus the file and sheet names.
     - "Analyse this file" with no question: call workbook_reader, then hand
-      over to data_analyst for the three most useful questions it suggested.
+      over to data_expert for the three most useful questions it suggested.
 
     If no file is named and it is unclear which one is meant, ask one
     question with ask_user. If the user has not uploaded anything yet, tell

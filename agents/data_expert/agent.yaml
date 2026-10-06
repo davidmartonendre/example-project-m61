@@ -1,5 +1,5 @@
 agent:
-  name: data_analyst
+  name: data_expert
   version: "0.1.0"
   description: >-
     Use to answer questions about a workbook's data with real numbers: totals,
