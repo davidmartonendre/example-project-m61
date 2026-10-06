@@ -1,0 +1,6 @@
+name: excel_inbox
+scope: user              # each person sees only the workbooks they upload
+quota_mb: 512
+prompt: >-
+  Excel workbooks (.xlsx, .xlsm) and CSV files the user wants analysed.
+  Read only. Do not write, move or delete files here.

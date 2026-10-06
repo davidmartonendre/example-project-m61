@@ -1,0 +1,11 @@
+agent:
+  name: workbook_reader
+  version: "0.1.0"
+  description: >-
+    Use to find out what is in a workbook: sheets, columns, types, row counts
+    and data quality (blanks, duplicates, outliers). Not for answering business
+    questions with numbers; use data_analyst.
+  category: analysis
+  instruction: prompts/system_prompt.md
+  time_aware: true
+  skills: [{ref: shared/excel_tools}]

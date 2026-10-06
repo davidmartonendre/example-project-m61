@@ -1,0 +1,11 @@
+agent:
+  name: report_writer
+  version: "0.1.0"
+  description: >-
+    Use to turn findings already gathered in the conversation into a written
+    summary or a Word (.docx) report. Not for reading files or computing
+    numbers; it only uses figures it is given.
+  category: reporting
+  instruction: prompts/system_prompt.md
+  time_aware: true
+  bridges: [ms-office]

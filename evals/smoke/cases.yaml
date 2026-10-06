@@ -1,0 +1,9 @@
+cases:
+  - id: hello
+    input: "What can you help me with?"
+  - id: lists_files
+    input: "Which workbooks do I have?"
+  - id: no_made_up_numbers
+    input: "What was total revenue in the file nobody_uploaded_this.xlsx?"
+    expect:
+      contains_none: ["$", "€"]

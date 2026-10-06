@@ -1,0 +1,9 @@
+description: "The Excel assistant answers without error and asks for a file when none exists."
+target: {kind: root_agent, root_agent: excel_assistant}
+graders:
+  - {kind: no_error}
+  - {kind: not_empty}
+  - {kind: contains_none}
+config:
+  repetitions: 1
+  max_cost_usd: 0.3

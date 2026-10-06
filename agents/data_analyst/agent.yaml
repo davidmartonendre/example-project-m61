@@ -1,0 +1,15 @@
+agent:
+  name: data_analyst
+  version: "0.1.0"
+  description: >-
+    Use to answer questions about a workbook's data with real numbers: totals,
+    averages, group-bys, pivots, trends, rankings, comparisons. Not for
+    describing structure or data quality; use workbook_reader.
+  category: analysis
+  instruction: prompts/system_prompt.md
+  time_aware: true
+  tools:
+    builtin: [ask_user]
+  skills: [{ref: shared/excel_tools}]
+  runaway_protection:
+    max_same_tool_calls: 6      # several query_sheet calls per question is normal

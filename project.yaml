@@ -1,0 +1,4 @@
+# Deploy settings (display name, size, service split, scale, CORS, shutdown)
+# are platform state: Project settings → Configuration in the M61 UI.
+# Only the tracked branch is read from here, and only as a fallback.
+branch: main

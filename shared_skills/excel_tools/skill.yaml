@@ -1,0 +1,14 @@
+skill:
+  name: excel_tools
+  version: "0.1.0"
+  description: "Read-only tools that open, profile and query Excel and CSV files in the excel_inbox workspace."
+  skill_prompt: prompts/skill_prompt.md
+  workspaces: [excel_inbox]
+  tools:
+    mcp:
+      - transport: stdio
+        server: tools/mcp_server.py
+        env:
+          EXCEL_DIR: "{{ workspace_dir }}"
+        request_timeout: 120          # large workbooks take a while to parse
+    idempotent: [list_workbooks, describe_workbook, profile_sheet, query_sheet, pivot_sheet]
